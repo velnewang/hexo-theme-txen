@@ -3,6 +3,7 @@ title:
   category: 分类
   tag: 标签
   schedule: 日程表
+  about: 关于
 
 author: 博主
 
@@ -12,6 +13,7 @@ menu:
   categories: 分类
   tags: 标签
   about: 关于
+  main: 主站
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
@@ -33,7 +35,7 @@ post:
   visitors: 阅读次数
   wordcount: 字数统计
   min2read: 阅读时长
-  totalcount: Site words total count
+  totalcount: 站点总字数
   copyright:
     author: 本文作者
     link: 本文链接
@@ -66,7 +68,7 @@ counter:
     other: "目前共计 %d 篇日志。"
 
 state:
-  posts: 日志
+  posts: 文章
   pages: 页面
   tags: 标签
   categories: 分类

@@ -61,11 +61,21 @@ get_font_family(config) {
   return custom_family is a 'string' ? custom_family : null
 }
 
-// Font families.
-$font-family-chinese      = "PingFang SC", "Microsoft YaHei"
+// Font list
+$font-sans-zh     = "PingFang SC", "Microsoft YaHei"
 
-$font-family-base         = $font-family-chinese, sans-serif
-$font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global')
+$font-serif-zh    = "Source Han Serif", "SimSun"
+
+$font-mono        = "Source Code Pro", "Consolas", "Menlo"
+$font-mono-half   = "Source Han Sans JP"
+
+$font-icons       = "FontAwesome"
+
+$font-emoji       = "Segoe UI Emoji"
+
+// Font families
+$font-family-base         = $font-sans-zh, sans-serif
+$font-family-base         = get_font_family('global'), $font-sans-zh, sans-serif if get_font_family('global')
 
 $font-family-logo         = $font-family-base
 $font-family-logo         = get_font_family('logo'), $font-family-base if get_font_family('logo')
@@ -76,10 +86,10 @@ $font-family-headings     = get_font_family('headings'), $font-family-base if ge
 $font-family-posts        = $font-family-base
 $font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts')
 
-$font-family-monospace    = consolas, Menlo, $font-family-chinese, monospace
-$font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-chinese, monospace if get_font_family('codes')
+$font-family-monospace    = $font-mono, $font-sans-zh, monospace
+$font-family-monospace    = get_font_family('codes'), $font-mono, $font-sans-zh, monospace if get_font_family('codes')
 
-$font-family-icons        = 'FontAwesome'
+$font-family-icons        = $font-icons
 
 
 // Font Weight
@@ -91,7 +101,7 @@ $font-weight-bolder       = 700
 
 
 // Font size
-$font-size-base           = 14px
+$font-size-base           = 16px
 $font-size-base           = unit(hexo-config('font.global.size'), px) if hexo-config('font.global.size') is a 'unit'
 $font-size-small          = $font-size-base - 2px
 $font-size-smaller        = $font-size-base - 4px
@@ -144,7 +154,7 @@ $table-row-hover-bg-color       = $whitesmoke
 // Code & Code Blocks
 // --------------------------------------------------
 $code-font-family               = $font-family-monospace
-$code-font-size                 = 13px
+$code-font-size                 = $font-size-base - 1
 $code-font-size                 = unit(hexo-config('font.codes.size'), px) if hexo-config('font.codes.size') is a 'unit'
 $code-border-radius             = 3px
 $code-foreground                = $black-light

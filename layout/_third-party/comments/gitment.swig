@@ -1,4 +1,3 @@
-{% if not (theme.duoshuo and theme.duoshuo.shortname) and not theme.duoshuo_shortname %}
 {% if theme.gitment.enable and theme.gitment.client_id %}
 <!-- LOCAL: You can save these files to your site and update links -->
     {% if theme.gitment.mint %}
@@ -55,5 +54,4 @@
       </script>
     {% endif %}
 
-{% endif %}
 {% endif %}

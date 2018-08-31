@@ -162,7 +162,7 @@ toc:
   enable: true
 
   # Automatically add list number to toc.
-  number: true
+  number: false
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
@@ -356,9 +356,6 @@ han: false
 # Baidu Analytics ID
 #baidu_analytics:
 
-# Duoshuo ShortName
-#duoshuo_shortname:
-
 # Disqus
 disqus:
   enable: false
@@ -431,8 +428,6 @@ gitment:
 #add_this_id:
 
 # Share
-#duoshuo_share: true
-
 # NeedMoreShare2
 # This plugin is a pure javascript sharing lib which is useful in China.
 # See: https://github.com/revir/need-more-share2
@@ -482,15 +477,6 @@ needmoreshare2:
 # Application Insights
 # See https://azure.microsoft.com/en-us/services/application-insights/
 # application_insights:
-
-# Make duoshuo show UA
-# user_id must NOT be null when admin_enable is true!
-# you can visit http://dev.duoshuo.com get duoshuo user id.
-duoshuo_info:
-  ua_enable: true
-  admin_enable: false
-  user_id: 0
-  #admin_nickname: Author
 
 # Post widgets & FB/VK comments settings.
 # ---------------------------------------------------------------

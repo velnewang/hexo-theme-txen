@@ -199,17 +199,9 @@ language: zh-Hans
 
 ### 评论支持 Comment support
 
-NexT 已经原生支持 `多说` and `Disqus` 评论系统。
+NexT 已经原生支持 `Disqus` 评论系统。
 
 添加以下代码到你的主题配置文件 `_config.yml`:
-
-```yml
-duoshuo:
-  enable: true
-  shortname: your-duoshuo-shortname
-```
-
-或者
 
 ```yml
 disqus_shortname: your-disqus-shortname
